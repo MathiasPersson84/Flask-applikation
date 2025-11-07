@@ -1,5 +1,7 @@
 # Flask-applikation
 
+![Exempel på inloggningsformulär](Flask-applikation.png)
+
 En enkel Flask-applikation som demonstrerar grundläggande användarhantering:
 - Registrering av användare  
 - Inloggning och utloggning  
