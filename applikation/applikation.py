@@ -8,7 +8,7 @@ import jwt
 
 # === Ladda miljövariabler ===
 load_dotenv()
-SECRET_KEY = os.getenv("SECRET_KEY", "fallback-hemlighet")
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # === Initiera Flask ===
 app = Flask(__name__)
