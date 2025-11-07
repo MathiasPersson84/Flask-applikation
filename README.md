@@ -30,8 +30,8 @@ Säkerhetshanteringen (lösenord, token, sessionsdata m.m.) är förenklad för 
 applikation/
 │
 ├── applikation.py
-├── database.db
-├── .env
+├── database.db     # Skapas vid uppstart av applikation
+├── .env            # Skapas under steg 3
 ├── requirements.txt
 │
 ├── templates/
@@ -63,6 +63,7 @@ pip install -r requirements.txt
 **3. Skapa .env-fil med hemlighet**
 ```bash
 python3 -c "import secrets; print(secrets.token_hex(16))" > .env   # Skapa en hemlig nyckel och spara den i en fil som heter ".env"
+echo "FLASK_ENV=development" >> .env    # Lägg till att applikationen ska startas i DEBUG-läge
 ```
 **4. Starta applikationen**
 ```bash
