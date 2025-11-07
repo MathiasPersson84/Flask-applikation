@@ -1,0 +1,5 @@
+Flask>=2.2
+Werkzeug
+Flask-Session        # om man väljer server-side sessions (valfritt)
+flask-talisman       # för säkra headers (valfritt)
+python-dotenv        # för inläsning av känsliga miljövariabler

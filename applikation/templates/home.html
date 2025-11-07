@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Hem{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-center min-vh-100">
+  <div class="auth-card text-center">
+    <h2>Välkommen, {{ user }}!</h2>
+    <p>Du är inloggad.</p>
+
+    <div class="d-grid">
+      <a href="{{ url_for('logout') }}" class="btn btn-outline-secondary">Logga ut</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

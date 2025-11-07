@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Återställ lösenord{% endblock %}
+{% block content %}
+<div class="d-flex align-items-center justify-content-center min-vh-100">
+  <div class="auth-card">
+    <h2 class="text-center">Återställ lösenord</h2>
+    <form method="POST">
+      <div class="mb-3">
+        <label class="form-label">Användarnamn</label>
+        <input type="text" name="username" class="form-control" placeholder="Ditt användarnamn" required>
+      </div>
+      <div class="d-grid mb-2">
+        <button type="submit" class="btn btn-primary">Fortsätt</button>
+      </div>
+      <div class="text-center small">
+        <a class="small-link" href="{{ url_for('login') }}">Tillbaka till inloggning</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
