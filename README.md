@@ -96,7 +96,7 @@ Se ```requirements.txt``` för fullständig lista.
 
 ## Säkerhetsnotis
 
-**Viktigt:**
+**Viktigt:**  
 Denna applikation är inte säker och bör inte användas i produktion.
 Lösenord lagras med hashing (via werkzeug.security), men inga extra skyddsåtgärder som:
 - CSRF-skydd
